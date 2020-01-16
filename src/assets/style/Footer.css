@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    background-color: rgb(252,252,252);
+    /* height: 400px; */
+    content: '';
+    border-top: solid 1px rgb(240,240,240);
+    display: flex;
+    flex-flow: column;
+}
+.footer-developed {
+    width: 100%;
+    background-color: rgb(6, 6, 65);
+    padding: 15px 4% 15px 4%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(215,215,215);
+    font-size: .9em;
+}
+.footer-developed p {
+    margin: 0px;
+}
+.footer-developed a {
+    text-decoration: none;
+    color: rgb(215,215,215);
+}
