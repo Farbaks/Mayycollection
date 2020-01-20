@@ -1,0 +1,210 @@
+.content {
+    min-height: 800px;
+    width: 100%;
+    content: '';
+    margin-top: 70px;
+}
+.section1 {
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 45px 4% 15px 4%;
+    box-sizing: border-box;
+}
+.product-image {
+    width: 58%;
+    overflow: hidden;
+}
+.product-image-container {
+    width: 100%;
+    overflow: hidden;
+}
+.product-image-container img {
+    width: 100%;
+}
+.product-det {
+    width: 42%;
+    height: 400px;
+    content: '';
+    /* background-color: rgb(250,250,250); */
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 25px;
+    box-sizing: border-box;
+}
+.product-name {
+    font-weight: 400;
+    font-size: 1.25em;
+    letter-spacing: 0.1px;
+    margin: 10px 0px 10px 0px;
+    color: black;
+}
+.section-3-card-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.06em;
+    margin: 0px 0px 25px 0px;
+    letter-spacing: .3px;
+}
+.sale-price {
+    color:firebrick;
+    margin: 0px;
+    margin-right: 5px;
+}
+.normal-price {
+    color:rgb(100,100,100);
+    margin: 0px;
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: .8em;
+}
+.property {
+    margin-bottom: 25px;
+}
+.bold {
+    font-weight: 700;
+    font-size: .84em;
+    color: rgb(30,30,30);
+}
+.light {
+    font-weight: 400;
+    font-size: .89em;
+    color: rgb(30,30,30);
+}
+.instock {
+    color:green;
+    font-weight: 500;
+    font-size: .9em;
+}
+.outofstock {
+    color:firebrick;
+    font-weight: 500;
+    font-size: .9em;
+}
+.add-to-collection {
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.property input {
+    width: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: none;
+    border:solid 1px rgb(235,235,235);
+    /* margin-right: 20px; */
+}
+.add-to-collection button {
+    width: 87%;
+    padding: 15px 60px;
+    font-size: .78em;
+    font-weight: 500;
+    letter-spacing: .4px;
+    color: white;
+    box-sizing: border-box;
+    background-color: rgb(6, 6, 65);
+    border:none;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+.wishlist {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(235,235,235);
+    border-radius: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .4s;
+    cursor: pointer;
+}
+.wishlist:hover, .add-to-collection button:hover {
+    box-shadow: 0 10px 15px -5px rgba(0,0,0,0.4), 0 10px 10px -5px rgba(0,0,0,0.04);    
+}
+.wishlist img {
+    width: 100%;
+}
+.product-description {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px 0% 15px 0%;
+}
+.description-text {
+    width: 100%;
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: .3px;
+    font-weight: 400;
+    font-size: .9em;
+}
+.section-3 {
+    padding: 30px 4% 15px 4%;
+}
+/* .product-description-heading {
+    font-weight: 700;
+    color:rgb(70,70,70);
+} */
+/* .section-3 {
+    align-items: flex-start;
+    background-color: white;
+}
+.related-title {
+    font-size: 1.16em;
+    font-weight: 300;
+}
+.related-line {
+    width: 100%;
+    height: 0;
+    content: '';
+    border-bottom:solid 1px rgb(210,210,210)
+} */
+@media screen and (max-width:800px){
+    .section1 {
+        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0px;
+        /* padding: 15px 16px 15px 16px; */
+    }
+    .product-image {
+        width: 100%;
+    }
+    .product-det {
+        width: 100%;
+        padding: 15px 16px 15px 16px;
+        box-sizing: border-box;
+    }
+    .product-name {
+        font-size: 1.15em;
+    }
+    
+    .add-to-collection button {
+        /* width: 50px; */
+        width: 85%;
+        padding: 12px 60px;
+        font-size: .67em;
+    }
+    .product-description {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 15px 16px 15px 16px;
+    }
+    .section-3 {
+        padding: 15px 16px 15px 16px;
+    }
+    .section-3-title {
+        font-size: 1.2em;
+    }
+}

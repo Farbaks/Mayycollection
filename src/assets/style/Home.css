@@ -283,7 +283,7 @@
     .big-below-link {
         display: block;
     }
-    .section-2 {
+    .section-2, .section-3 {
         padding: 50px 16px 20px 16px;
     }
     .section-2-title {

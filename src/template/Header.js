@@ -205,7 +205,7 @@ function Header() {
             <div className="bar1" id="b2"></div>
             <div className="bar2" id="b3"></div>
           </div>
-          <a href="" className="header-logo">
+          <a href="/" className="header-logo">
             <img src={process.env.PUBLIC_URL+'/images/logo.png'} alt="logo" />
           </a>
           <div className="header-category">
@@ -231,7 +231,7 @@ function Header() {
           <a className="button-icon">
             <img src={process.env.PUBLIC_URL+'/images/saveditem.svg'} alt="saveditem" />
           </a>
-          <a className="button-icon">
+          <a className="button-icon" href="/bag/">
             <img src={process.env.PUBLIC_URL+'/images/shoppingbag.svg'} alt="shoppingbag" />
             <span>86</span>
           </a>
@@ -248,7 +248,7 @@ function Header() {
           <a className="button-icon">
             <img src={process.env.PUBLIC_URL+'/images/saveditem.svg'} alt="saveditem" />
           </a>
-          <a className="button-icon">
+          <a className="button-icon" href="/bag/">
             <img src={process.env.PUBLIC_URL+'/images/shoppingbag.svg'} alt="shoppingbag" />
             <span>86</span>
           </a>
@@ -346,19 +346,19 @@ function Header() {
         </a>
         <a className="user-detail">
           <div className="button-icon-1">
-            <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+            <img src={process.env.PUBLIC_URL+'/images/order.svg'} alt="order" />
           </div>
           <p>My Orders</p>
         </a>
         <a className="user-detail">
           <div className="button-icon-1">
-            <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+            <img src={process.env.PUBLIC_URL+'/images/return.svg'} alt="return" />
           </div>
           <p>Return Information</p>
         </a>
         <a className="user-detail">
           <div className="button-icon-1">
-            <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+            <img src={process.env.PUBLIC_URL+'/images/contact.svg'} alt="contact" />
           </div>
           <p>Contact Information</p>
         </a>
@@ -437,24 +437,24 @@ function Header() {
             </a>
             <a className="small-user-detail">
               <div className="button-icon-1">
-                <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+                <img src={process.env.PUBLIC_URL+'/images/order.svg'} alt="order" />
               </div>
               <p>My Orders</p>
             </a>
             <a className="small-user-detail">
               <div className="button-icon-1">
-                <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+                <img src={process.env.PUBLIC_URL+'/images/return.svg'} alt="return" />
               </div>
               <p>Return Information</p>
             </a>
             <a className="small-user-detail">
               <div className="button-icon-1">
-                <img src={process.env.PUBLIC_URL+'/images/user2.svg'} alt="user" />
+                <img src={process.env.PUBLIC_URL+'/images/contact.svg'} alt="contact" />
               </div>
               <p>Contact Information</p>
             </a>
           </div>  
-
+          
         </div>
       </div>
       
