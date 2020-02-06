@@ -7,7 +7,8 @@ import {Slide} from 'react-slideshow-image';
 import './assets/style/Home.css';
 
 function Home() {
-  
+    
+    document.getElementById("title").innerHTML="Home - Mayy Collection";
     const properties = {
         duration: 5000,
         transitionDuration: 500,
@@ -17,7 +18,8 @@ function Home() {
             console.log(`slide transition from ${oldIndex} to ${newIndex}`);
         }
     }
-  
+    
+    
   
     return (
     

@@ -58,18 +58,19 @@ function Product() {
                                 <img src={process.env.PUBLIC_URL+'/images/saveditem.png'} alt="shirt" />
                             </div>
                         </div>
+                        <div className="product-description">
+                            <p className="product-description-title">PRODUCT DESCRIPTION</p>
+                            <p className="description-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Nostrum eligendi, non dolorem tenetur reiciendis placeat consectetur 
+                            totam quis natus ipsa cupiditate quasi. Autem consectetur 
+                            ratione itaque aspernatur. Expedita, quo illum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Nostrum eligendi, non dolorem tenetur reiciendis placeat consectetur 
+                            totam quis natus ipsa cupiditate quasi. 
+                            </p>
+                        </div>
                     </div>
-                    <div className="product-description">
-                        <p className="bold">DESCRIPTION</p>
-                        <p className="description-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Nostrum eligendi, non dolorem tenetur reiciendis placeat consectetur 
-                        totam quis natus ipsa cupiditate quasi. Autem consectetur 
-                        ratione itaque aspernatur. Expedita, quo illum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Nostrum eligendi, non dolorem tenetur reiciendis placeat consectetur 
-                        totam quis natus ipsa cupiditate quasi. 
-                        </p>
-                    </div>
+                    
                 </div>
                 <div className="section-3">
                 <p className="section-3-title">Related Products</p>

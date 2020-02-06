@@ -12,6 +12,7 @@ import {
 import Home from './Home';
 import Product from './product/Product';
 import Bag from './bag/Bag';
+import Search from './search/Search';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
        <Route exact path="/" component={Home} />
        <Route exact path="/product/" component={Product} />
        <Route exact path="/bag/" component={Bag} />
+       <Route exact path="/search/" component={Search} />
       </Router>
   );
 }
