@@ -30,7 +30,7 @@ function Bag() {
                     <p>Oh no, your bag is empty. <a href="/">Start shopping!</a></p>
                 </div>
                 <div className="cart">
-                    <p className="cart-heading">SHOPPING BAG</p>
+                    <p className="cart-heading">Shopping bag</p>
                     <div className="cart-content">
                         <div className="cart-content-1">
                             <div className="cart-item">
@@ -209,8 +209,8 @@ function Bag() {
                                 <p>₦4000</p>
                             </div>
                             <div className="price">
-                                <p>Delivery:</p>
-                                <p>₦4000</p>
+                                <p>Shipping:</p>
+                                <p><i>Calculated at checkout</i></p>
                             </div>
                             <br/>
                             <div className="price">

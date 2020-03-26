@@ -1,0 +1,307 @@
+.fullwidth {
+    width:100%;
+}
+.halfwidth {
+    width:48%;
+}
+.onethirdwidth {
+    width:32%;
+}
+.twothirdwidth {
+    width:62%;
+}
+.onequarterwidth {
+    width:24%;
+}
+.threequarterwidth {
+    width:72%;
+}
+.red {
+    color: red;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.green {
+    color: green;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.blue {
+    color: rgb(6,6,65);
+    font-size: 15px;
+    margin-right: 5px;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.flex-column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.align-flex-start {
+    align-items: flex-start;
+}
+.admin-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.admin-topbar {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 55px;
+    background-color: rgb(255,255,255);
+    border-bottom: solid 1px rgb(240,240,240);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 2px 2% 2px 0px;
+    z-index: 99999;
+    box-sizing: border-box;
+}
+.admin-topbar-image-container {
+    width: 20%;
+    height: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.admin-topbar-image {
+    width: 70px;
+}
+.admin-topbar-image img {
+    width: 100%;
+}
+.page-title {
+    width: 80%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-title p {
+    margin: 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgba(75,75,75);
+}
+.topbar-right {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topbar-icons {
+    position: relative;
+    margin-right: 30px;
+    transform: scale(.9);
+    text-decoration: none;
+    /* border: solid 1px grey; */
+    border-radius: 3px;
+    padding: 3px 6px;
+    transition: .3s all ease;
+}
+.topbar-icons:hover {
+    box-shadow: inset 0 10px 15px -5px rgba(0,0,0,0.4), 0 10px 10px -5px rgba(0,0,0,0.04);    
+
+}
+.topbar-icons-image {
+    width: 17px;
+}
+.topbar-icons-image img {
+    width: 100%;
+}
+.topbar-icon-number {
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .57em;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+}
+.topbar-admin-picture {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.topbar-admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(6,6,65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar-admin-avatar p {
+    color: white;
+    margin: 0px;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+.topbar-admin-name  {
+    margin-left: 10px;
+}
+.topbar-admin-name p {
+    font-size: .7em;
+    margin: 0px;
+    font-weight: 400;
+}
+.topbar-admin-name p:last-child {
+    font-weight: 600;
+}
+.admin-bottombar {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+    background-color: #f4f6f9;
+}
+.admin-sidebar {
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    background-color: rgba(25,25,25);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 25px 0px 100px 0px;
+    margin-top: 53px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+/* width */
+.admin-sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.admin-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.admin-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.admin-menu-heading {
+    margin: 0px;
+    font-size: .8em;
+    padding: 13px 10px 13px 30px;
+    color: rgba(135,135,135);
+}
+.admin-sidebar-link {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 13px 10px 13px 30px;
+    box-sizing: border-box;
+    transition: all ease .2s;
+    border-left:solid 3px transparent;
+}
+.admin-sidebar-link:hover {
+    background-color: rgba(45,45,45);
+    border-left:solid 3px white;
+    color: white;
+}
+.admin-sidebar-link-image {
+    width: 13px;
+    margin-right: 22px;
+}
+.admin-sidebar-link-image img {
+    width: 100%;
+}
+.admin-sidebar-link p {
+    margin:0px;
+    letter-spacing: .15px;
+    font-size: .8em;
+    font-weight: 400;
+}
+.admin-maincontent {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 55px;
+    min-height: 700px;
+    padding: 20px 2% 2px 30px;
+}
+.small-charts {
+    height: 90px;
+    background-color: white;
+    border:solid 1px rgba(245,245,245);
+    border-radius: 5px;
+    content: '';
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.small-charts-part {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.small-charts-part p {
+    margin: 0px;
+    font-size: .75em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: rgb(90,90,90);
+}
+.small-charts-part p:last-child {
+    margin: 0px;
+    font-size: .95em;
+    font-weight: 500;
+    color: rgb(50,50,50);
+}
+.mid-cards {
+    height: 400px;
+    content: '';
+    background-color: white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+.mid-cards-heading {
+    font-weight: 500;
+    color: rgb(90,90,90);
+}
+.mid-cards-message-list {
+    
+}
+@media screen and (max-width:800px){
+    .halfwidth, .onethirdwidth, .twothirdwidth, .onequarterwidth, .threequarterwidth {
+        width:100%;
+        margin-bottom: 10px;
+    }
+}

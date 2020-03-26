@@ -1,0 +1,92 @@
+.trackorder-subheading {
+    width: 100%;
+    font-size: .95em;
+    font-weight: 300;
+    padding: 0px 4% 0px 4%;
+    margin: 10px 0px 20px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    /* color: rgb(90,90,90); */
+}
+.trackorder-form {
+    width: 100%;
+    padding: 0px 4% 0px 4%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.trackorder-form input {
+    width: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: solid 1px rgb(240,240,240);
+    border-radius: 5px;
+}
+.trackorder-form input:first-child {
+   margin-bottom: 20px;
+}
+.trackorder-form button {
+    padding: 15px 45px;
+    box-sizing: border-box;
+    border: solid 1px rgb(230,230,230);
+    border-radius: 25px;
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(6, 6, 65);
+    color: white;
+    font-weight: 300;
+    transition: .4s ease all;
+    cursor: pointer;
+}
+.trackorder-form button:hover {
+    box-shadow: 0 20px 25px 0px rgba(0,0,0,0.1), 0 10px 10px 0px rgba(0,0,0,0.04);
+}
+@media screen and (max-width:800px){
+    .trackorder-subheading {
+        width: 100%;
+        font-size: .95em;
+        font-weight: 300;
+        padding: 0px 16px 0px 16px;
+        margin: 10px 0px 20px 0px;
+        box-sizing: border-box;
+        text-align: center;
+        /* color: rgb(90,90,90); */
+    }
+    .trackorder-form {
+        width: 100%;
+        padding: 0px 16px 0px 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .trackorder-form input {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        border: solid 1px rgb(240,240,240);
+        border-radius: 5px;
+    }
+    .trackorder-form input:first-child {
+       margin-bottom: 20px;
+    }
+    .trackorder-form button {
+        padding: 15px 45px;
+        box-sizing: border-box;
+        border: solid 1px rgb(230,230,230);
+        border-radius: 25px;
+        margin-top: 30px;
+        border: none;
+        background-color: rgb(6, 6, 65);
+        color: white;
+        font-weight: 300;
+        transition: .4s ease all;
+        cursor: pointer;
+    }
+    .trackorder-form button:hover {
+        box-shadow: 0 20px 25px 0px rgba(0,0,0,0.1), 0 10px 10px 0px rgba(0,0,0,0.04);
+    }
+}

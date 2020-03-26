@@ -249,6 +249,7 @@
     flex-flow: row;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .user-detail:hover {
     color:black;
@@ -519,6 +520,7 @@
         flex-flow: row;
         align-items: center;
         cursor: pointer;
+        text-decoration: none;
     }
     .small-user-detail:hover {
         color:black;

@@ -29,7 +29,8 @@
 }
 .cart-heading {
     font-size: 1.65em;
-    font-weight: 600;
+    font-weight: 400;
+    word-spacing: 1.5px;
 }
 .cart-subheading {
     font-size: 1.25em;
