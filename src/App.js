@@ -29,6 +29,7 @@ import UserCustomItems from './user/customorders/UserCustomItems';
 
 // Admin pages
 import Dashboard from './admin/dashboard/Dashboard';
+import Products from './admin/products/Products';
 
 function App() {
   return (
@@ -55,7 +56,9 @@ function App() {
         <Route exact path="/user/custom-order-detail" component={UserCustomItems} />
 
         {/* Admin pages */}
+        <Route exact path="/admin" component={Dashboard} />
         <Route exact path="/admin/dashboard" component={Dashboard} />
+        <Route exact path="/admin/products" component={Products} />
     </Router>
   );
 }

@@ -1,82 +1,77 @@
 import React from 'react';
-import '../assets/style/admin.css';
+import '../assets/style/UserAccount.css';
 
-function AdminHeader() {
+
+
+function AdminHeader(props) {
     
+    function open(){
+        let b2 = document.getElementById('b2');
+        let b3 = document.getElementById('b3');
+        let menuContent = document.getElementById('smenucontent');
+        
+        b2.style.width = "70%";
+        b3.style.width = "85%";
+        menuContent.style.left = "0%";
+    }
+    
+    function showMenu() {
+        let menuContent = document.getElementById('smenucontent');
+        if(menuContent.style.left === "0%") {
+            
+            let b2 = document.getElementById('b2');
+            let b3 = document.getElementById('b3');
+            
+            b2.style.width = "100%";
+            b3.style.width = "75%";
+            
+            menuContent.style.left = "-100%";
+        }
+        else {
+            open();
+        }
+    }  
     return (
-     
-    <div className="admin-sidebar">
-        <div className="fullwidth">
-            <p className="admin-menu-heading">DASHBOARD MENU</p>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-home.svg'} alt="logo" />
+        <div className="admin-topbar">
+            <div className="admin-topbar-image-container">
+                <div className="Header-sidemenu-button" onClick={showMenu}>
+                    <div className="bar1" id="b2"></div>
+                    <div className="bar2" id="b3"></div>
                 </div>
-                <p>Dashboard</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-products.svg'} alt="logo" />
+                <div className="admin-topbar-image">
+                    <img src={process.env.PUBLIC_URL+'/logo.png'} alt="logo" />
                 </div>
-                <p>Products</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-category.svg'} alt="logo" />
+            </div>
+            <div className="page-title">
+                <p className="page-title-heading">{props.pageTitle}</p>
+                <div className="topbar-right">
+                    <a href=" " className="topbar-icons">
+                        <div className="topbar-icons-image">
+                            <img src={process.env.PUBLIC_URL+'/images/newmessages.svg'} alt="messages" />
+                        </div>
+                        <div className="topbar-icon-number">10</div>
+                    </a>
+                    <a href=" " className="topbar-icons">
+                        <div className="topbar-icons-image">
+                            <img src={process.env.PUBLIC_URL+'/images/notification.svg'} alt="messages" />
+                        </div>
+                        <div className="topbar-icon-number">987</div>
+                    </a>
+                    <div className="topbar-admin-picture">
+                        <div className="topbar-admin-avatar">
+                            <p>FB</p>
+                        </div>
+                        {/* <div className="topbar-admin-name">
+                            <p>Farouk Bakre</p>
+                            <p>Admin</p>
+                        </div> */}
+                    </div> 
                 </div>
-                <p>Categories</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-order.svg'} alt="logo" />
-                </div>
-                <p>Orders</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-customorder.svg'} alt="logo" />
-                </div>
-                <p>Custom Orders</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-user.svg'} alt="logo" />
-                </div>
-                <p>Customers</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-messages.svg'} alt="logo" />
-                </div>
-                <p>Messages</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-report.svg'} alt="logo" />
-                </div>
-                <p>Report</p>
-            </a>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-marketing.svg'} alt="logo" />
-                </div>
-                <p>Marketing</p>
-            </a>
-        </div>
-        <div className="fullwidth">
-            <p className="admin-menu-heading">ACCOUNT</p>
-            <a href="" className="admin-sidebar-link">
-                <div className="admin-sidebar-link-image">
-                    <img src={process.env.PUBLIC_URL+'/images/admin-account.svg'} alt="logo" />
-                </div>
-                <p>Settings</p>
-            </a>
+                
+            </div>
             
         </div>
-
-    </div>
-
-  );
+      );
 }
 
 export default AdminHeader;

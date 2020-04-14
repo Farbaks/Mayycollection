@@ -49,7 +49,7 @@ function Product() {
                         <div className="property"><span className="bold">SIZE: </span><span className="light">L</span></div>
                         <div className="property">
                             <span className="bold">QUANTITY: </span>
-                            <input type="text" value="1" />
+                            <input type="number" defaultValue="1" />
                         </div>
                         <div className="add-to-collection">
                             
