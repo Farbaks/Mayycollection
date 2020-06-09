@@ -183,6 +183,9 @@
     content: '';
     border-bottom:solid 1px rgb(210,210,210)
 } */
+/* .black {
+    
+} */
 @media screen and (max-width:800px){
     .section1 {
         width:100%;

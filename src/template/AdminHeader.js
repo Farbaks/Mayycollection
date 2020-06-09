@@ -1,4 +1,6 @@
 import React from 'react';
+import { Badge } from 'antd';
+import 'antd/es/badge/style/index.css';
 import '../assets/style/UserAccount.css';
 
 
@@ -49,13 +51,13 @@ function AdminHeader(props) {
                         <div className="topbar-icons-image">
                             <img src={process.env.PUBLIC_URL+'/images/newmessages.svg'} alt="messages" />
                         </div>
-                        <div className="topbar-icon-number">10</div>
+                        <div className="topbar-icon-number">99+</div>
                     </a>
                     <a href=" " className="topbar-icons">
                         <div className="topbar-icons-image">
                             <img src={process.env.PUBLIC_URL+'/images/notification.svg'} alt="messages" />
                         </div>
-                        <div className="topbar-icon-number">987</div>
+                        <div className="topbar-icon-number">99+</div>
                     </a>
                     <div className="topbar-admin-picture">
                         <div className="topbar-admin-avatar">

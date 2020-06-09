@@ -23,10 +23,13 @@ function UserCustomOrders() {
                             <div className="order-detail-top-2">
                                 <table className="order-detail-product-information">
                                     <thead>
-                                        <th>Order No</th>
-                                        <th>Status</th>
-                                        <th>Order Date</th>
-                                        <th>Action</th>
+                                        <tr>
+                                            <th>Order No</th>
+                                            <th>Status</th>
+                                            <th>Order Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        
                                     </thead>
                                     <tbody>
                                         <tr>

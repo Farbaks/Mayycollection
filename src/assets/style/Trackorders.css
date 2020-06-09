@@ -24,7 +24,10 @@
     border: solid 1px rgb(240,240,240);
     border-radius: 5px;
 }
-.trackorder-form input:first-child {
+.trackorder-form a {
+    color: black;
+}
+.trackorder-form input:not(:last-child) {
    margin-bottom: 20px;
 }
 .trackorder-form button {

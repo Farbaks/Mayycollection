@@ -146,25 +146,25 @@
 .user-account-button-container {
     width: 100%;
     border-top: solid 1px rgb(205,205,205);
-    padding: 30px 0px;
-    margin-top: 40px;
+    padding: 20px 0px;
+    margin-top: 20px;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
 }
 .user-account-button-container button {
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 20px;
-    border: solid 1px rgb(50,50,50);
+    border: solid 1px rgb(200,200,200);
     color: black;
     background-color: white;
-    font-size: .83em;
+    font-size: 12px;
 }
 .user-account-button-container button:last-child {
     border: none;
     color: white;
     background-color: rgb(6,6,65);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .user-menu-title {
     width: 100%;
@@ -183,7 +183,8 @@
         font-size: 1.65em;
         font-weight: 400;
         word-spacing: 1.5px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
+        margin-top: 0px;
     }
     .user-menu-link {
         display: flex;

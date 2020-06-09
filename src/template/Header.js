@@ -335,8 +335,8 @@ function Header() {
         onMouseOut={() => hideCat('user')}>
         
         <div className="user-login">
-          <a>Sign In</a>
-          <a>Join</a>
+          <a href="/user/signin">Sign In</a>
+          <a href="/user/signup">Join</a>
         </div>
         <a href="/user/account" className="user-detail">
           <div className="button-icon-1">
@@ -426,8 +426,8 @@ function Header() {
           <div className="side-women">
             
             <div className="small-user-login">
-              <a>Sign In</a>
-              <a>Join</a>
+              <a href="/user/signin">Sign In</a>
+              <a href="/user/signup">Join</a>
             </div>
             <a href="/user/account" className="small-user-detail">
               <div className="button-icon-1">

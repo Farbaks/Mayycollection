@@ -3,11 +3,15 @@ import Header from '../template/Header';
 import Footer from '../template/Footer';
 import {Fade} from 'react-slideshow-image';
 import {Slide} from 'react-slideshow-image';
+import { Carousel } from 'antd';
 // import logo from './logo.svg';
 import '../assets/style/Product.css';
+import 'antd/es/carousel/style/index.css';
+
+
 
 function Product() {
-  
+    document.getElementById("title").innerHTML="Products - Mayy Collection";
     const properties = {
         duration: 5000,
         transitionDuration: 500,
@@ -26,7 +30,7 @@ function Product() {
             <div className="content">
                 <div className="section1">
                     <div className="product-image">
-                        <Slide {...properties}>
+                        {/* <Slide {...properties}>
                             <div className="product-image-container">
                                 <img src={process.env.PUBLIC_URL+'/images/bag.jpg'} alt="shirt" />
                             </div>
@@ -36,7 +40,18 @@ function Product() {
                             <div className="product-image-container">
                                 <img src={process.env.PUBLIC_URL+'/images/shirt22.jpg'} alt="shirt" />
                             </div>
-                        </Slide>
+                        </Slide> */}
+                        <Carousel autoplay>
+                            <div className="product-image-container">
+                                <img src={process.env.PUBLIC_URL+'/images/bag.jpg'} alt="shirt" />
+                            </div>
+                            <div className="product-image-container">
+                                <img src={process.env.PUBLIC_URL+'/images/shirt21.jpg'} alt="shirt" />
+                            </div>
+                            <div className="product-image-container">
+                                <img src={process.env.PUBLIC_URL+'/images/shirt22.jpg'} alt="shirt" />
+                            </div>
+                        </Carousel>
                     </div>
                     <div className="product-det">
                         <div className="product-name">ASOS DESIGN "Eat, Sleep, Drink" casual shirt</div>

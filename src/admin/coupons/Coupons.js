@@ -23,18 +23,14 @@ import 'antd/es/modal/style/index.css';
 import { Radio } from 'antd';
 import 'antd/es/radio/style/index.css';
 
-import { Upload } from 'antd';
-import 'antd/es/upload/style/index.css';
-import { PlusOutlined } from '@ant-design/icons';
-
 const { Search } = Input;
 
 
 
 
-document.getElementById("title").innerHTML="Admin | Products - Mayy Collection";
+document.getElementById("title").innerHTML="Admin | Coupons - Mayy Collection";
 
-class Products extends React.Component {
+class Coupons extends React.Component {
     
     constructor(props) {
         super(props);
@@ -55,7 +51,7 @@ class Products extends React.Component {
                 }
             ],
             modalSettings:{
-                modalTitle:"Add New Product"
+                modalTitle:"Add New Coupon"
             }
         };
     } 
@@ -67,11 +63,10 @@ class Products extends React.Component {
     }
     
     showNewModal = () => {
-        console.log("testing 1");
         this.setState({
           visible: true,
           modalSettings:{
-            modalTitle:"Add New Product"
+            modalTitle:"Add New Coupon"
           }
         });
     };
@@ -80,7 +75,7 @@ class Products extends React.Component {
         this.setState({
           visible: true,
           modalSettings:{
-            modalTitle:"Edit Product"
+            modalTitle:"Edit Coupon"
           }
         });
     };
@@ -103,43 +98,38 @@ class Products extends React.Component {
 
     columns = [
         {
-            title: '',
-            dataIndex: 'img',
-            className: 'columnheader'
-        },
-        {
-            title: 'NAME',
+            title: 'COUPON NAME',
             dataIndex: 'name',
             className: 'columnheader'
         },
         {
-            title: 'PRODUCTID',
-            dataIndex: 'productid',
+            title: 'COUPONID',
+            dataIndex: 'couponid',
             className: 'columnheader'
         },
         {
-            title: 'CATEGORY',
-            dataIndex: 'category',
+            title: 'TYPE',
+            dataIndex: 'type',
             className: 'columnheader'
         },
         {
-            title: 'SIZE',
-            dataIndex: 'size',
+            title: 'AMOUNT',
+            dataIndex: 'amount',
             className: 'columnheader'
         },
         {
-            title: 'COLOR',
-            dataIndex: 'color',
+            title: 'DESCRIPTION',
+            dataIndex: 'description',
             className: 'columnheader'
         },
         {
-            title: 'QUANTITY',
-            dataIndex: 'quantity',
+            title: 'LIMIT',
+            dataIndex: 'limit',
             className: 'columnheader'
         },
         {
-            title: 'PRICE',
-            dataIndex: 'price',
+            title: 'EXPIRY',
+            dataIndex: 'expiry',
             className: 'columnheader'
         },
         {
@@ -157,86 +147,71 @@ class Products extends React.Component {
     data = [
     {
         key: '1',
-        img: <div className="product-item-image-item">
-                <img src={process.env.PUBLIC_URL+'/images/shoe4.jpg'} alt="empty cart" />
-            </div>,
-        name: 'ASOS Design Chelsea boots',
-        productid: '00043',
-        category: 'Men\'s Shoes',
-        size: 'Medium',
-        color: 'Black',
-        quantity: '12',
-        price: '₦5,000',
-        status: 'Active',
+        name: 'MOTHERSDAY20',
+        couponid: '00043',
+        type:'Percentage',
+        amount: '20',
+        description:'Coupons for all mothers to enjoy their day.',
+        limit:'4000',
+        expiry: '22/2/2020',
+        status: <div className="flex-row5"><div className="status bg-green"></div>Active</div>,
         action: <div><i className="fas fa-edit editicon producticon"  onClick={this.showEditModal}></i>
         <i className="fas fa-trash-alt producticon"></i></div>
     },
     {
         key: '2',
-        img: <div className="product-item-image-item">
-                    <img src={process.env.PUBLIC_URL+'/images/shirt4.jpg'} alt="empty cart" />
-                </div>,
-        name: 'ASOS Design Polo Shirt',
-        productid: '00053',
-        category: 'Women\'s Shoes',
-        size: 'Medium',
-        color: 'Black',
-        quantity: '12',
-        price: '₦5,000',
-        status: 'Active',
-        action: <div><i className="fas fa-edit editicon producticon" onClick={this.showEditModal}></i>
-        <i className="fas fa-trash-alt producticon" ></i></div>
+        name: 'FATHERSDAY35',
+        couponid: '00043',
+        type:'Price',
+        amount: '20000',
+        description:'Coupons for all fathers to enjoy their day.',
+        limit:'400',
+        expiry: '22/2/2020',
+        status: <div className="flex-row5"><div className="status bg-orange"></div>Inactive</div>,
+        action: <div><i className="fas fa-edit editicon producticon"  onClick={this.showEditModal}></i>
+        <i className="fas fa-trash-alt producticon"></i></div>
     },
     {
         key: '3',
-        img: <div className="product-item-image-item">
-                    <img src={process.env.PUBLIC_URL+'/images/shirt9.jpg'} alt="empty cart" />
-                </div>,
-        name: 'AZTECH Polo Shirt',
-        productid: '00043',
-        category: `Men's Polos`,
-        size: 'Medium',
-        color: 'Black',
-        quantity: '12',
-        price: '₦5,000',
-        status: 'Active',
+        name: 'BLVCKFRIDAY1',
+        couponid: '00043',
+        type:'Percentage',
+        amount: '70',
+        description:'Spend like no tommorow.',
+        limit:'400',
+        expiry: '22/2/2020',
+        status: <div className="flex-row5"><div className="status bg-red"></div>Expired</div>,
         action: <div><i className="fas fa-edit editicon producticon"  onClick={this.showEditModal}></i>
-        <i className="fas fa-trash-alt producticon" ></i></div>
+        <i className="fas fa-trash-alt producticon"></i></div>
     },
     
     
     ];
 
     render () {
-        const uploadButton = (
-            <div className="margin">
-              <PlusOutlined />
-              <div className="ant-upload-text">Upload</div>
-            </div>
-          );
         return (
             <div className="admin-content">
-                <AdminHeader pageTitle = {"Products"}/>
+                <AdminHeader pageTitle = {"Coupons"}/>
                 <div className="admin-bottombar">
                     <AdminSideNav />
                     <div className="admin-maincontent">
-                        <p className="top-content-heading">Products</p>
+                        <p className="top-content-heading">Coupons</p>
                         <div className="fullwidth flex-row">
                             <div className="onequarterwidth small-charts">
                                 <div className="fullwidth product-info">
-                                    <p>Total Products</p>
+                                    <p>Total Coupons</p>
                                     <p>113</p>
                                 </div>
                             </div>
                             <div className="onequarterwidth small-charts">
                                 <div className="fullwidth product-info">
-                                    <p>Out of stock</p>
+                                    <p>Active Coupons</p>
                                     <p>4</p>
                                 </div>
                             </div>
                             <div className="onequarterwidth small-charts">
                                 <div className="fullwidth product-info">
-                                    <p>Total Items</p>
+                                    <p>Expired Coupons</p>
                                     <p>453</p>
                                 </div>
                             </div>
@@ -249,9 +224,9 @@ class Products extends React.Component {
                         </div>
                         <div className="fullwidth mid-cards padding1520">
                             <div className="fullwidth flex-row3">
-                            <button className="mid-cards-link1" onClick={this.showNewModal}>+ Add new product</button>
+                            <button className="mid-cards-link1" onClick={this.showNewModal}>+ Add new coupon</button>
                                 <Search
-                                placeholder="Search for items, categories, sizes, productid"
+                                placeholder="Search for names, coupon id"
                                 onSearch={value => console.log(value)}
                                 style={{ width: 200 }}
                                 className="inputstyle1"
@@ -276,48 +251,40 @@ class Products extends React.Component {
                             className="fullwidth product-input"
                         >
                             <div className="flex-row fullwidth">
-                                <label className="formtext">Name of product:</label>
-                                <input type="text" placeholder="Product name" className="fullwidth"/>
+                                <label className="formtext">Name of Coupon:</label>
+                                <input type="text" placeholder="Coupon name" className="fullwidth"/>
                             </div>
                             <div className="flex-row fullwidth">
-                                <label className="formtext">Product description:</label>
-                                <textarea type="text" placeholder="Product description" className="fullwidth"></textarea>
-                            </div>
-                            <div className="flex-row3 fullwidth">
-                                <div className="halfwidth flex-column2">
-                                    <label className="formtext">Category:</label>
-                                    <input type="text" placeholder="Category" className="fullwidth"/>
-                                </div>
-                                <div className="halfwidth flex-column2">
-                                    <label className="formtext">Gender:</label>
-                                    <Radio.Group>
-                                        <Radio value={1}>Men</Radio>
-                                        <Radio value={2}>Women</Radio>
-                                    </Radio.Group>
-                                </div>
+                                <label className="formtext">Coupon description:</label>
+                                <textarea type="text" placeholder="Coupon description" className="fullwidth"></textarea>
                             </div>
                             <div className="fullwidth flex-row3">
                                 <div className="onethirdwidth flex-column2">
-                                    <label className="formtext">Size:</label>
-                                    <input type="text" placeholder="Size" className="fullwidth"/>
+                                    <label className="formtext">Type:</label>
+                                    <select className="fullwidth">
+                                        <option>Select type</option>
+                                        <option>Percentage</option>
+                                        <option>Price</option>
+                                    </select>
                                 </div>
                                 <div className="onethirdwidth flex-column2">
-                                    <label className="formtext">Color:</label>
-                                    <input type="text" placeholder="Color" className="fullwidth"/>
+                                    <label className="formtext">Amount:</label>
+                                    <input type="number" placeholder="Amount" className="fullwidth"/>
                                 </div>
                                 <div className="onethirdwidth flex-column2">
-                                    <label className="formtext">Quantity:</label>
-                                    <input type="number" placeholder="Quantity" className="fullwidth"/>
+                                    <label className="formtext">User Limit(Leave empty if no limit):</label>
+                                    <input type="number" placeholder="Product's selling price" className="fullwidth"/>
                                 </div>
+                                <br/>
                             </div>
                             <div className="fullwidth flex-row3">
                                 <div className="onethirdwidth flex-column2">
-                                    <label className="formtext">Cost:</label>
-                                    <input type="text" placeholder="Cost of product" className="fullwidth"/>
+                                    <label className="formtext">Start Date:</label>
+                                    <input type="date" placeholder="Start date" className="fullwidth"/>
                                 </div>
                                 <div className="onethirdwidth flex-column2">
-                                    <label className="formtext">Sale Price:</label>
-                                    <input type="text" placeholder="Product's selling price" className="fullwidth"/>
+                                    <label className="formtext">Expiry Date:</label>
+                                    <input type="date" placeholder="Expiry date" className="fullwidth"/>
                                 </div>
                                 <div className="onethirdwidth flex-column2">
                                     <label className="formtext">Status:</label>
@@ -329,16 +296,6 @@ class Products extends React.Component {
                                 </div>
                                 <br/>
                             </div>
-                            <div className="fullwidth flex-row">
-                                <label className="formtext">Product Images:</label>
-                                <Upload
-                                listType="picture-card"
-                                fileList={this.state.fileList}
-                                onChange={this.handleChange}
-                                >
-                                {this.state.fileList.length >= 2 ? null : uploadButton}
-                                </Upload>
-                            </div>
                         </Modal>
                     </div>
                 </div>
@@ -347,4 +304,4 @@ class Products extends React.Component {
     }
 }
 
-export default Products;
+export default Coupons;
