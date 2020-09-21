@@ -5,7 +5,7 @@ import '../../assets/style/Trackorders.css';
 
 function Forgotpassword() {
     
-    document.getElementById("title").innerHTML="Forgot password - Mayy Collection";   
+    document.getElementById("title").innerHTML="Admin | Forgot password - Mayy Collection";   
     
   
     return (
