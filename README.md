@@ -1,3 +1,6 @@
+This is a template site for online stores. It comes with an online store template and an admin dashboard template. It is built with React.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
